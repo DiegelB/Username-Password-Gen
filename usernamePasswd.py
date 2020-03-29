@@ -31,9 +31,9 @@ def randPass(alpha, num):
 	print("password: ", passw)
 	return passw
 
-
+siteUsed = input("Where will this be used?\n>>")
 name = randUser(alpha, number)
 passw = randPass(alpha, number)
 # this creates and executes the bash command in linux shell
-info = """echo "%s %s" >> /home/mlgprobei/Scripting/RandUsrPw/save.txt""" % (name, passw)
+info = """echo "%s %s %s" >> /home/skelly/Scripting/RandUsrPw/save.txt""" % (name, passw, siteUsed)
 os.system(info)
